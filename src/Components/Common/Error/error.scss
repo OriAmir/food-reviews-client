@@ -1,0 +1,17 @@
+@import 'theme.scss';
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 30px auto;
+  color: $error;
+ 
+}
+
+.error-icn {
+  color: $error;
+  font-size: 24px;
+}

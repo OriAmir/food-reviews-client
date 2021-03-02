@@ -1,0 +1,22 @@
+@import "theme.scss";
+
+.table-filters-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px 0;
+
+  .product-id-input-filter {
+    margin-left: 15px;
+    height: 35px;
+    width: 250px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid $filter-border;
+    border-radius: 5%;
+  }
+
+  .score-filter {
+    width: 250px;
+    box-shadow: none;
+  }
+}

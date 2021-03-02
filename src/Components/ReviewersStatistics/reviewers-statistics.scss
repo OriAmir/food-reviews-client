@@ -1,0 +1,31 @@
+@import "theme.scss";
+
+.reviewers-statistics-wrapper {
+  margin: 20px;
+  justify-content: center;
+  .title {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .list-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-stats {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-data {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $light-grey;
+    border-top: 1px solid $light-grey;
+    width: 300px;
+    padding: 15px;
+  }
+}

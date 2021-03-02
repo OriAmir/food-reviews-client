@@ -1,0 +1,31 @@
+@import "theme.scss";
+
+.review-info-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+  margin-top: 16px;
+  .review-title {
+    font-size: 20px;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+  .detail-info {
+    border-bottom: 1px solid $light-grey;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  .detail-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 2px;
+  }
+
+  .detail-value {
+    font-size: 14px;
+  }
+
+  .star-icn {
+    color: $score-color;
+  }
+}

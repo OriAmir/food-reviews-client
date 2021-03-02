@@ -1,0 +1,49 @@
+@import "theme.scss";
+
+.pagination {
+  padding: 0.5rem;
+  font-size: 18px;
+
+  .navigate-row {
+    display: flex;
+  }
+  .navigate-btn {
+    background-color: $navigate-btn;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: $shadow-main-color 0px 0.0625em 0.0625em;
+    cursor: pointer;
+    border: 1px solid $main-color;
+    color: $main-color;
+    margin: 0 1px;
+    border: 0;
+    padding-top: 4px;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+
+    &.disabled {
+      background-color: $disabled-color;
+      cursor: auto;
+    }
+  }
+
+  .page-num {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .input-navigate-wrapper {
+    margin: 0px 10px;
+    .input-debounce {
+      max-width: 100px;
+    }
+  }
+
+  .number-per-page-select {
+    margin-left: auto;
+    width: 200px;
+    overflow: visible;
+  }
+}

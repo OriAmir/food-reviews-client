@@ -1,0 +1,59 @@
+@import "theme.scss";
+
+.modal-wrapper {
+  margin: 100px auto;
+  max-width: 500px;
+  height: calc(100vh - 200px);
+  background-color: $white;
+  border: 2px solid $light-grey;
+  outline: none;
+  border-radius: 5px;
+  overflow: scroll;
+
+  .modal-body {
+    padding: 0 20px;
+    height: calc(100% - 120px); //remove header and footer
+  }
+
+  .modal-title {
+    height: 40px;
+    border-bottom: 1px solid $light-grey;
+    padding-left: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: $grey;
+  }
+
+  .close-icon-row {
+    height: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .close-icn {
+    height: 18px;
+    width: 18px;
+    &:hover {
+      background-color: $light-grey;
+      border-radius: 100%;
+    }
+  }
+
+  .close-modal-row {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0px;
+    height: 25px;
+  }
+
+  .close-modal-btn {
+    font-size: 14px;
+    cursor: pointer;
+    border: 0;
+    margin-right: 5px;
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}

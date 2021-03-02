@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: "OpenSans";
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"), url(./fonts/OpenSans-Regular.ttf) format("truetype");
+}

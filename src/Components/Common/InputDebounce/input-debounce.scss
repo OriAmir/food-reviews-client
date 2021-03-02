@@ -1,0 +1,11 @@
+@import "theme.scss";
+
+.input-debounce {
+  margin-left: 15px;
+  height: 35px;
+  width: 250px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: 1px solid $filter-border;
+  border-radius: 5%;
+}
