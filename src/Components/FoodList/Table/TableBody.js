@@ -28,7 +28,7 @@ const TableBody = () => {
                     <AiFillEye
                       className="view-icon"
                       onClick={() => {
-                        dispatch(setCurrentSelectedReview(cell.row.values.Id));
+                        dispatch(setCurrentSelectedReview(cell.row.values.id));
                       }}
                     />
                   ) : (

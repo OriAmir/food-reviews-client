@@ -46,7 +46,7 @@ export const foodListReducer = (state = initialState, action) => {
       return {
         ...state,
         selectedReview: state.tableData.reviews.find(
-          (r) => action.payload === r.Id
+          (r) => action.payload === r.id
         ),
       };
     case RESET_CURRENT_SELECTED_REVIEW:
