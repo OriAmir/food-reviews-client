@@ -10,7 +10,7 @@ const Navbar = () => {
         Food Reviews
       </span>
       <NavItem to="/foodList" title="Food List" />
-      <NavItem to="/foodStatistics" title="Food Statistics" />
+      <NavItem to="/foodStatistics" title="Food Statistics" /> 
       <NavItem to="/reviewersStatistics" title="Reviewers Statistics" />
     </div>
   );

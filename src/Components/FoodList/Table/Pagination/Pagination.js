@@ -20,7 +20,7 @@ const Pagination = () => {
     nextPage,
     previousPage,
     setPageSize,
-    state: { pageIndex, pageSize },
+    state: { pageIndex },
   } = tableInstance;
 
   return (
@@ -56,7 +56,7 @@ const Pagination = () => {
           gotoPage={gotoPage}
           disabled={!canNextPage && !canPreviousPage}
         />
-        <NumberPerPageSelect pageSize={pageSize} setPageSize={setPageSize} />
+        <NumberPerPageSelect pageCount={pageCount} setPageSize={setPageSize} />
       </div>
     </div>
   );

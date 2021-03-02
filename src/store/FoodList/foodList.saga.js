@@ -1,4 +1,4 @@
-import { put, takeEvery } from "redux-saga/effects";
+import { put, takeLatest } from "redux-saga/effects";
 import * as actionTypes from "./foodList.actionsTypes";
 import axios from "axios";
 import {
@@ -38,8 +38,8 @@ function* getTableDataFiltered({ payload }) {
 }
 
 function* foodListSaga() {
-  yield takeEvery(actionTypes.GET_REVIEWS_DATA, getTableData);
-  yield takeEvery(actionTypes.GET_REVIEWS_DATA_FILTERED, getTableDataFiltered);
+  yield takeLatest(actionTypes.GET_REVIEWS_DATA, getTableData);
+  yield takeLatest(actionTypes.GET_REVIEWS_DATA_FILTERED, getTableDataFiltered);
 }
 
 export default foodListSaga;

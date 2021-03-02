@@ -1,20 +1,20 @@
 import { numPerPageOptions } from "Components/FoodList/food-list.constants";
-import Select from "react-select";
 import PropTypes from "prop-types";
+import Select from "Components/Common/Select/Select";
 
-const NumberPerPageSelect = ({ pageSize, setPageSize }) => (
+const NumberPerPageSelect = ({ pageCount, setPageSize }) => (
   <Select
     className="number-per-page-select"
     options={numPerPageOptions}
     onChange={({ value }) => setPageSize(value)}
-    value={pageSize}
     menuPlacement="top"
     placeholder={numPerPageOptions[0].label}
+    isDisabled={pageCount < 10}
   />
 );
 
 NumberPerPageSelect.propTypes = {
-  pageSize: PropTypes.number,
+  pageCount: PropTypes.number,
   setPageSize: PropTypes.func,
   total: PropTypes.number,
 };
